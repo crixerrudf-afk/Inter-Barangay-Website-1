@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Inter Barangay Basketball League
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>🏀 TAYUG INTER BARANGAY 2026</h1>
+
+<p>Inter Barangay Basketball Tournament</p>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#schedule">Schedule</a>
+
+<a href="#live-score">Live Score</a>
+
+<a href="#standing">Standings</a>
+
+<a href="#players">Players</a>
+
+<a href="#playoffs">Playoffs</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero" id="home">
+
+
+<h2>
+WELCOME TAYUGENIA'S FANS
+</h2>
+
+
+<p>
+To all Tayugenian fans, let's show our love and support for our beloved barangays! Let's unite, cheer, and stand together as one community.
+Every support, encouragement, and participation makes a difference. Padayon Tayugenian!
+</p>
+
+
+<button>
+View Games
+</button>
+
+
+</section>
+
+
+
+<!-- LIVE GAME -->
+
+<section id="live-score">
+
+
+<h2 class="title">
+🔴 LIVE GAME
+</h2>
+
+
+
+<div class="live-board">
+
+
+<div class="team-score">
+
+<h2>
+Libertad
+</h2>
+
+<h1 id="homeScore">
+78
+</h1>
+
+
+<button onclick="addScore('homeScore',1)">
++1
+</button>
+
+<button onclick="addScore('homeScore',2)">
++2
+</button>
+
+<button onclick="addScore('homeScore',3)">
++3
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="game-info">
+
+
+<h2>
+QUARTER
+</h2>
+
+
+<h1 id="quarter">
+4
+</h1>
+
+
+
+<div class="timer">
+
+<span id="minutes">
+02
+</span>
+:
+<span id="seconds">
+35
+</span>
+
+
+</div>
+
+
+<button onclick="startTimer()">
+▶ START
+</button>
+
+
+<button onclick="pauseTimer()">
+⏸ PAUSE
+</button>
+
+
+<button onclick="resetTimer()">
+RESET
+</button>
+
+
+
+<p>
+📍 Tayug Covered Gym
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="team-score">
+
+
+<h2>
+Panganiban
+</h2>
+
+
+<h1 id="awayScore">
+72
+</h1>
+
+
+
+<button onclick="addScore('awayScore',1)">
++1
+</button>
+
+
+<button onclick="addScore('awayScore',2)">
++2
+</button>
+
+
+<button onclick="addScore('awayScore',3)">
++3
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- SCHEDULE -->
+
+<section id="schedule">
+
+<h2 class="title">
+📅 Game Schedule
+</h2>
+
+
+<div class="schedule">
+
+
+<div class="game">
+
+<h3>September 21</h3>
+
+<p>
+Poblacion C VS Poblacion D
+</p>
+
+<span>
+5:30 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 21</h3>
+
+<p>
+Guzon VS Barangobong
+</p>
+
+<span>
+7:00 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 23</h3>
+
+<p>
+Lawak VS Panganiban
+</p>
+
+<span>
+6:30PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 24</h3>
+
+<p>
+Trenchera VS Libertad
+</p>
+
+<span>
+5:30 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 2</h3>
+
+<p>
+Libertad VS Legaspi
+</p>
+
+<span>
+6:00 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 26</h3>
+
+<p>
+Panganiban VS Agno
+</p>
+
+<span>
+7:00 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 27</h3>
+
+<p>
+Poblacion A VS Carriedo
+</p>
+
+<span>
+6:00 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+<div class="game">
+
+<h3>September 28</h3>
+
+<p>
+Amistad VS Lawak
+</p>
+
+<span>
+7:00 PM
+</span>
+
+<hr>
+
+<div class="venue">
+📍 Tayug Covered Gym
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+<section id="standing">
+
+
+
+<section id="standing">
+
+<h2 class="title">
+🏆 Team Standings
+</h2>
+
+
+<table>
+
+<tr>
+<th>Rank</th>
+<th>Team</th>
+<th>Wins</th>
+<th>Loss</th>
+<th>Points</th>
+</tr>
+
+
+<tr>
+<td>1</td>
+<td>Panganiban</td>
+<td>10</td>
+<td>1</td>
+<td>17</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Agno</td>
+<td>9</td>
+<td>0</td>
+<td>16</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>Poblacion A</td>
+<td>8</td>
+<td>2</td>
+<td>15</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>Carriedo</td>
+<td>7</td>
+<td>2</td>
+<td>15</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>Trenchera</td>
+<td>7</td>
+<td>2</td>
+<td>15</td>
+</tr>
+
+
+<tr>
+<td>6</td>
+<td>Saleng</td>
+<td>5</td>
+<td>4</td>
+<td>14</td>
+</tr>
+
+
+<tr>
+<td>7</td>
+<td>Zamora</td>
+<td>4</td>
+<td>5</td>
+<td>13</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>Legaspi</td>
+<td>6</td>
+<td>4</td>
+<td>13</td>
+</tr>
+
+
+<tr>
+<td>9</td>
+<td>Libertad</td>
+<td>6</td>
+<td>6</td>
+<td>12</td>
+</tr>
+
+
+<tr>
+<td>10</td>
+<td>Poblacion B</td>
+<td>3</td>
+<td>6</td>
+<td>12</td>
+</tr>
+
+
+<tr>
+<td>11</td>
+<td>Santo Domingo</td>
+<td>3</td>
+<td>6</td>
+<td>12</td>
+</tr>
+
+
+<tr>
+<td>12</td>
+<td>Toketec</td>
+<td>2</td>
+<td>7</td>
+<td>11</td>
+</tr>
+
+
+<tr>
+<td>13</td>
+<td>Magallanes</td>
+<td>2</td>
+<td>7</td>
+<td>11</td>
+</tr>
+
+
+<tr>
+<td>14</td>
+<td>Poblacion C</td>
+<td>2</td>
+<td>7</td>
+<td>11</td>
+</tr>
+
+
+<tr>
+<td>15</td>
+<td>Poblacion D</td>
+<td>1</td>
+<td>8</td>
+<td>10</td>
+</tr>
+
+
+<tr>
+<td>16</td>
+<td>Guzon</td>
+<td>1</td>
+<td>8</td>
+<td>10</td>
+</tr>
+
+
+<tr>
+<td>17</td>
+<td>C. Lichauco</td>
+<td>1</td>
+<td>8</td>
+<td>10</td>
+</tr>
+
+
+<tr>
+<td>18</td>
+<td>Barangobong</td>
+<td>1</td>
+<td>8</td>
+<td>10</td>
+</tr>
+
+
+<tr>
+<td>19</td>
+<td>Amistad</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
+</tr>
+
+
+<tr>
+<td>20</td>
+<td>Lawak</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
+</tr>
+
+
+<tr>
+<td>21</td>
+<td>Evangelista</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+<!-- PLAYER STATISTICS -->
+
+<section id="players">
+
+<h2 class="title">
+🏀 Player Statistics
+</h2>
+
+
+<table class="player-table">
+
+<tr>
+<th>Rank</th>
+<th>Player</th>
+<th>Team</th>
+<th>Position</th>
+<th>GP</th>
+<th>PTS</th>
+<th>REB</th>
+<th>AST</th>
+<th>STL</th>
+<th>BLK</th>
+</tr>
+
+
+<tr>
+<td>1</td>
+<td>Lawrence Manipon</td>
+<td>Panganiban</td>
+<td>PG</td>
+<td>10</td>
+<td>250</td>
+<td>65</td>
+<td>80</td>
+<td>25</td>
+<td>5</td>
+</tr>
+
+
+<tr>
+<td>2</td>
+<td>Crix Fernandez</td>
+<td>Libertad</td>
+<td>SG</td>
+<td>11</td>
+<td>230</td>
+<td>70</td>
+<td>45</td>
+<td>30</td>
+<td>8</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>Levie Espique</td>
+<td>Agno</td>
+<td>SF</td>
+<td>9</td>
+<td>210</td>
+<td>90</td>
+<td>35</td>
+<td>20</td>
+<td>15</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>James Abando</td>
+<td>Poblacion A</td>
+<td>PF</td>
+<td>10</td>
+<td>195</td>
+<td>120</td>
+<td>30</td>
+<td>18</td>
+<td>20</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>Kjell Fernandez</td>
+<td>Trenchera</td>
+<td>C</td>
+<td>8</td>
+<td>180</td>
+<td>150</td>
+<td>20</td>
+<td>10</td>
+<td>25</td>
+</tr>
+
+
+</table>
+
+</section>
+
+<!-- PLAYOFF BRACKET -->
+
+<section id="playoffs">
+
+<h2 class="title">
+🏆 Playoff Bracket - Road to Finals
+</h2>
+
+
+<div class="bracket">
+
+
+<div class="round">
+
+<h3>Quarter Finals</h3>
+
+<div class="match">
+<strong>QF1</strong><br>
+(1) Panganiban
+<br>
+VS
+<br>
+(8) Legaspi
+</div>
+
+
+<div class="match">
+<strong>QF2</strong><br>
+(2) Agno
+<br>
+VS
+<br>
+(7) Zamora
+</div>
+
+
+<div class="match">
+<strong>QF3</strong><br>
+(3) Poblacion A
+<br>
+VS
+<br>
+(6) Saleng
+</div>
+
+
+<div class="match">
+<strong>QF4</strong><br>
+(4) Carriedo
+<br>
+VS
+<br>
+(5) Trenchera
+</div>
+
+
+</div>
+
+
+
+<div class="round">
+
+<h3>Semi Finals</h3>
+
+
+<div class="match semifinal">
+
+<strong>SEMIFINAL 1</strong>
+
+<br><br>
+
+Winner QF1
+
+<br>
+VS
+<br>
+
+Winner QF4
+
+</div>
+
+
+<div class="match semifinal">
+
+<strong>SEMIFINAL 2</strong>
+
+<br><br>
+
+Winner QF2
+
+<br>
+VS
+<br>
+
+Winner QF3
+
+</div>
+
+
+</div>
+
+
+
+<div class="round">
+
+<h3>Finals</h3>
+
+
+<div class="match final">
+
+<strong>CHAMPIONSHIP GAME</strong>
+
+<br><br>
+
+Winner SF1
+
+<br>
+VS
+<br>
+
+Winner SF2
+
+</div>
+
+
+<div class="match champion">
+
+🏆 CHAMPION
+
+<br><br>
+
+TBA
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
